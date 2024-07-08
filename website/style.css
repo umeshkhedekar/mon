@@ -824,6 +824,7 @@ body.dark .indicator{
     width:300px;
     background: none;
     text-align: center;
+    border-radius:5px;
 }
 .A-5 button{
     padding: 10px;
@@ -833,6 +834,7 @@ body.dark .indicator{
     color: #fff;
     background: linear-gradient(to bottom, #175d69 23%, #330c43 155%);
     margin-left: -5px;
+    border-radius: 5px;
 }
 body.dark .sub{
     background: #010718;
@@ -845,6 +847,7 @@ body.dark .A-5 input{
     .sub{
         display:table;
         height:685px;
+        background: none;
     }
     .slider{
        margin-left:0px;
