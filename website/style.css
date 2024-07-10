@@ -346,6 +346,7 @@ body.dark .search-field i{
 .home{
     margin-top: 150px;
     width:100%;
+  
 }
 .name h1 span{
     color:var(--orange-color);
@@ -1131,3 +1132,289 @@ th {
 }
 
 
+/*--====== contact main page ======--*/
+
+.contact-1{
+    display:flex;
+    margin-top: 200px;
+}
+body.dark .contact-1 a{
+    color:#fff;
+   
+}
+body.dark .e-1 h2{
+  color: #fff;
+}
+.location {
+   display: flex;
+   background: #fff;
+   width: 300px;
+   height:80px;
+   padding: 10px;
+   text-align: center;
+   margin-left: 250px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   margin-top: -30px;
+   border-radius:5px;
+   color: #000;
+}
+Body.dark .location,
+Body.dark .email,
+Body.dark .number,
+Body.dark .Req{
+    background: #000;
+}
+.location i{
+    margin-top:0px;
+    margin: 10px;
+    font-size: 30px;
+    color: #FFBF00;
+}
+.location p{
+    margin-top:5px;
+}
+.location a{
+    text-decoration: none;
+    color: #000;
+}
+.email{
+    display: flex;
+    background: #fff;
+   width: 350px;
+   height:80px;
+   padding: 10px;
+   text-align: center;
+   margin-left:70px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   margin-top: -30px;
+   border-radius:5px;
+  
+}
+.email i{
+    margin-top:0px;
+    margin: 10px;
+    font-size: 30px;
+    color: #FFBF00;
+}
+.email p{
+    margin-top:5px;
+}
+.email a{
+    text-decoration: none;
+    color: #000;
+}
+.number{
+   display: flex;
+   background: #fff;
+   width: 350px;
+   height:80px;
+   padding: 10px;
+   text-align: center;
+   margin-left:70px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   margin-top: -30px;
+   border-radius:5px;
+  
+}
+.number i{
+    margin-top:0px;
+    margin: 10px;
+    font-size: 30px;
+    color: #FFBF00;
+}
+.number p{
+    margin-top:5px;
+}
+.number a{
+    text-decoration: none;
+    color: #000;
+}
+.Req{
+    height:500px;
+    width:90%;
+    display: flex;
+    margin-top: 70px;
+    margin-left:50px;
+    background: linear-gradient(to bottom, #175d69 23%, #330c43 155%);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    color:#fff;
+  
+}
+.Req img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:0px;
+}
+.Req form{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 40px;
+    text-align: center;
+  
+}
+
+body.dark .Req form{
+    color: #fff;
+}
+.Req form input{
+    margin-left:60px;
+    padding: 10px;
+    margin-top:25px;
+    width:300px;
+    border-radius: 5px;
+}
+#email {
+    margin-left:64px;
+}
+#mess{
+    width:300px;
+    margin-left:38px;
+    height:100px;
+   
+}
+.Req button{
+    margin-left:120px;
+   margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    width:300px;
+    color: #fff;
+    border: none;
+}
+@media (max-width: 790px){
+    .contact-1{
+        display:table;
+        margin-top:150px;
+    }
+    .location {
+       display: flex;
+       background: none;
+       width: 310px;
+       height:80px;
+       padding: 10px;
+       text-align: center;
+       margin-left:30px;
+       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+       margin-top: -30px;
+       border-radius:5px;
+       color: #000;
+       font-size: 14px;
+    }
+    .location i{
+        margin-top:0px;
+        margin: 10px;
+        font-size: 30px;
+        color: #FFBF00;
+    }
+    .location p{
+        margin-top:5px;
+    }
+    .location a{
+        text-decoration: none;
+        color: #000;
+    }
+    .email{
+        display: flex;
+        background: none;
+       width:310px;
+       height:80px;
+       padding: 10px;
+       text-align: center;
+       margin-left:30px;
+       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+       margin-top: 30px;
+       border-radius:5px;
+       font-size: 14px;
+      
+    }
+    .email i{
+        margin-top:0px;
+        margin: 10px;
+        font-size: 30px;
+        color: #FFBF00;
+    }
+    .email p{
+        margin-top:5px;
+    }
+    .email a{
+        text-decoration: none;
+        color: #000;
+    }
+    .number{
+       display: flex;
+       background: none;
+       width: 310px;
+       height:80px;
+       padding: 10px;
+       text-align: center;
+       margin-left:30px;
+       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+       margin-top: 30px;
+       border-radius:5px;
+       font-size: 14px;
+    }
+    .number i{
+        margin-top:0px;
+        margin: 10px;
+        font-size: 30px;
+        color: #FFBF00;
+    }
+    .number p{
+        margin-top:5px;
+    }
+    .number a{
+        text-decoration: none;
+        color: #000;
+    }
+    .Req{
+        height:600px;
+        color: #000;
+        display:table;
+        margin-top: 70px;
+        margin-left: 0;
+        background:none;
+       box-shadow: none;
+      
+    }
+    .Req img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left:0px;
+        width:350px;
+        display:none;
+    }
+    .Req form{
+        margin-left:20px;
+        margin-top: 30px;
+        margin-right: 0px;
+        text-align: center;
+
+      
+    }
+    
+    .Req form input{
+        margin-left:0px;
+        padding: 10px;
+        margin-top:25px;
+        width:300px;
+       
+    }
+    #email {
+        margin-left:4px;
+    }
+    #mess{
+        width:300px;
+        margin-left:8px;
+        height:100px;
+       
+    }
+    .Req button{
+        margin-left:0px;
+       margin-top: 20px;
+        padding: 10px;
+        background-color: #007bff;
+        width:300px;
+        color: #fff;
+        border: none;
+    }
+}

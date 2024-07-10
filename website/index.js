@@ -148,6 +148,30 @@ function showAlert() {
   }
     
 
+  function showAlert() {
+    var nameValue = document.getElementById('inputname').value;
+    alert('Hello Wellcome to WebsitePlanet :: ' + nameValue);
+
+    document.getElementById("call").reset();
+  }
+    
+
 //----------------------------------*//
 
+ // Initialize the map and set its view to the provided coordinates and zoom level
+var map = L.map('map').setView([20.18723900334896, 76.09975495250758], 13);
 
+// Add a tile layer to the map
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Add a marker to the map at the specified coordinates
+L.marker([20.18723900334896, 76.09975495250758]).addTo(map)
+    .bindPopup('Location at 20.18723900334896, 76.09975495250758.')
+    .openPopup();
+
+// Add a zoom control to the top right corner
+L.control.zoom({
+    position: 'topright'
+}).addTo(map);
