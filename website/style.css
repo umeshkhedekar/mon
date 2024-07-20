@@ -599,10 +599,10 @@ body.dark .firstt img{
     height:400px;
 }
 .tabs-container {
-   background-color: #007bff; 
+   background-color:#007bff; 
  
     padding: 10px;
-    border-radius: 5px;
+    border-radius:5px;
     margin-bottom: 20px;
 }
 .tabs button{
@@ -620,8 +620,8 @@ body.dark .firstt img{
     background: none;
     color: #fff;
     padding: 10px 20px;
-    border: 2px solid #007bff;
-    border-radius: 2px;
+    border: 2px solid #FFBF00;
+    border-radius:62px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -629,11 +629,12 @@ body.dark .tab{
     color: #fff;
 }
 .tab:hover {
-    background-color: #0056b3;
-    color: white;
+    background: #007bff;
+    color: #fff;
+    border: none;
 }
 .tab.active {
-    background-color: #0056b3;
+    background-color: #FFBF00;
     color: white;
 }
 .section {
@@ -644,7 +645,7 @@ body.dark .tab{
     margin-top: 50px;
 }
 #skills ul li{
-   margin-left: 50px;
+   margin-left: 80px;
 }
 #A-1{
    width: 130px;
@@ -700,7 +701,7 @@ body.dark .section{
        
     }
     .tabs-container {
-       background-color: #007bff; 
+       background-color: #FFBF00; 
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -718,18 +719,22 @@ body.dark .section{
     }
     .tab {
         background: none;
-        color: #007bff;
-        padding: 10px 10px;
-        border: 2px solid #007bff;
-        border-radius:2px;
+        color:#000;
+        padding:10px;
+       
+        border-radius:65px;
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .tab.active{
+        background: #FFBF00;
+       
     }
     body.dark .tab{
         background-color: #000;
     }
     body.dark .tab.active{
-        background: #0461c5;
+        background:#FFBF00;
     }
     #skills ul li{
        margin-left: 50px;
@@ -1394,11 +1399,13 @@ body.dark .Req form{
     
     .Req form input{
         margin-left:0px;
-        padding: 10px;
-        margin-top:25px;
+        padding: 13px;
+        margin-top:20px;
         width:300px;
+        margin-bottom:15px;
        
     }
+   
     #email {
         margin-left:4px;
     }
