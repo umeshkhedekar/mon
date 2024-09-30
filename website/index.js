@@ -138,19 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//------- Email alert ---------//
+/*---===== Login page =====---*/
 
-function showAlert() {
-    var emailValue = document.getElementById('inputEmail').value;
-    alert('Hello Wellcome to WebsitePlanet :: ' + emailValue);
 
-    document.getElementById("my").reset();
-  }
-    
 
-  function showAlert() {
-    var nameValue = document.getElementById('inputname').value;
-    alert('Hello Wellcome to WebsitePlanet :: ' + nameValue);
 
-    document.getElementById("call").reset();
-  }
+
+
+
+
+  

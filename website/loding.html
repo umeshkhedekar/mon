@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loding....</title>
+<style>
+    
+      section{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        align-items: center;
+        justify-content: center;
+      }
+      .loader{
+        height: 25px;
+        width: 25px;
+        position: relative;
+        animation: rotate 5s  infinite;
+      }
+      .ball{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .upper{
+        left: 0;
+        top: -22px;
+        background:#FFBF00;
+        animation: upper 1s linear infinite;
+      }
+      @keyframes upper {
+        50%{
+          top: 22px;
+        }
+        100%{
+          top: 22px;
+        }
+      }
+      .right{
+        right: -22px;
+        top: 0;
+        background:#FFBF00;
+        animation: right 1s linear infinite;
+      }
+      @keyframes right {
+        50%{
+          right: 22px;
+        }
+        100%{
+          right: 22px;
+        }
+      }
+      .lower{
+        bottom: -22px;
+        left: 0;
+        background:#FFBF00;
+        animation: lower 1s linear infinite;
+      }
+      @keyframes lower {
+        50%{
+          bottom: 22px;
+        }
+        100%{
+          bottom: 22px;
+        }
+      }
+      .left{
+        left: -22px;
+        top: 0;
+        background:#FFBF00;
+        animation: left 1s linear infinite;
+      }
+      @keyframes left {
+        50%{
+          left: 22px;
+        }
+        100%{
+          left: 22px;
+        }
+      }
+      .loader h3{
+        margin-top:80px;
+        text-align: center;
+      }
+</style>
+  </head>
+  <body>
+    <section>
+      <div class="loader">
+        <div class="upper ball"></div>
+        <div class="right ball"></div>
+        <div class="lower ball"></div>
+        <div class="left ball"></div>
+       
+      </div><br>
+    </section>
+    
+  </body>
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 5000); // 8 seconds
+  </script>
+</html>
