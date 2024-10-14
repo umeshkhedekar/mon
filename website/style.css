@@ -593,7 +593,7 @@ body.dark .firstt img{
     background-image: url(./img/freepik-export-20240930082330wwVZ.jpeg);
     background-position: center;
     background-size: contain;
-    background-attachment: fixed;
+   background-attachment: fixed;
     border-radius: 10px;
 }
 .container {
@@ -683,9 +683,9 @@ body.dark .section{
         margin-left:15px;
         margin-right:15px;
        background-repeat:none;
-       background-position: center;
+       
        background-size:cover;
-       background-attachment: fixed;
+       background-attachment:none;
        background-image:url(./img/landscape-with-warm-tones.jpg);
     }
     
