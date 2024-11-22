@@ -1,129 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction Company</title>
-  <style>
-    /* General styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Steps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 40px;
-      background: url('background.jpg') no-repeat center center/cover;
-      height: 100vh;
-    }
+        .process-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
 
-    /* About Section */
-    .about-section {
-      max-width: 50%;
-    }
+        .step {
+            text-align: center;
+            width: 20%;
+        }
 
-    .about-section h1 {
-      font-size: 2.5em;
-      color: #f4a81d;
-      margin-bottom: 10px;
-    }
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            position: relative;
+        }
 
-    .about-section p {
-      margin-top: 10px;
-      line-height: 1.6;
-    }
+        .icon.red {
+            background-color: #e74c3c;
+        }
 
-    .about-section button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: none;
-      background-color: #f4a81d;
-      color: #fff;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
+        .icon.yellow {
+            background-color: #f1c40f;
+        }
 
-    .about-section button:hover {
-      background-color: #e69517;
-    }
+        .icon.green {
+            background-color: #2ecc71;
+        }
 
-    /* Services Section */
-    .services-section {
-      max-width: 40%;
-    }
+        .icon.blue {
+            background-color: #3498db;
+        }
 
-    .services-section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #f4a81d;
-    }
-
-    .service {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .service .icon {
-      font-size: 2em;
-      margin-right: 15px;
-      color: #f4a81d;
-    }
-
-    .service h3 {
-      margin: 0;
-      font-size: 1.2em;
-    }
-
-    .service p {
-      margin: 5px 0 0;
-      line-height: 1.4;
-    }
-  </style>
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <!-- About Section -->
-    <div class="about-section">
-      <h1>About Our Construction Company</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</p>
-      <button>View Our Work</button>
+    <div class="process-container">
+        <div class="step">
+            <div class="icon red">
+                <span>Plan</span>
+            </div>
+            <p>This is a sample text that you can edit. You can change font(size, color, name), or apply any desired formatting.</p>
+        </div>
+        <div class="step">
+            <div class="icon yellow">
+                <span>Design</span>
+            </div>
+            <p>This is a sample text that you can edit. You can change font(size, color, name), or apply any desired formatting.</p>
+        </div>
+        <div class="step">
+            <div class="icon green">
+                <span>Develop</span>
+            </div>
+            <p>This is a sample text that you can edit. You can change font(size, color, name), or apply any desired formatting.</p>
+        </div>
+        <div class="step">
+            <div class="icon blue">
+                <span>Launch</span>
+            </div>
+            <p>This is a sample text that you can edit. You can change font(size, color, name), or apply any desired formatting.</p>
+        </div>
     </div>
-
-    <!-- Services Section -->
-    <div class="services-section">
-      <h2>What We Do</h2>
-      <div class="service">
-        <span class="icon">🏗️</span>
-        <div>
-          <h3>Building Construction</h3>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat.</p>
-        </div>
-      </div>
-      <div class="service">
-        <span class="icon">🔧</span>
-        <div>
-          <h3>Building Repairs</h3>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat.</p>
-        </div>
-      </div>
-      <div class="service">
-        <span class="icon">✏️</span>
-        <div>
-          <h3>Custom Design</h3>
-          <p>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>

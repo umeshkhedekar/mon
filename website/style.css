@@ -619,13 +619,14 @@ body.dark .firstt img{
     width: 700px;
     height:75px;
     padding:0px;
-    margin-top:-40px;
+    margin-top:60px;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
                 0 6px 20px rgba(0, 0, 0, 0.1);
  }
  .Ac{
      display: flex;
+     margin-top: -120px;
  }
  .tab {
      background: none;
@@ -651,7 +652,7 @@ body.dark .firstt img{
      padding: 20px;
      border-radius: 5px;
      color: #000;
-     margin-top:40px;
+     margin-top:-40px;
      margin-left:70px;
  }
  #skills ul li{
@@ -750,13 +751,14 @@ body.dark li img{
     .section{
         box-shadow:none;
         color: #000;
-        margin-top:40px;
+       
         margin-left:0px;
     }
     #about{
         font-size: small;
         margin: 0;
         padding: 0;
+        margin-top: -30px;
     }
     .container {
         width:90%;
@@ -780,9 +782,11 @@ body.dark li img{
        margin-left:8px;
        margin-right:8px;
        width: 350px;
+       margin-top: -40px;
     }
     .Ac{
         display:table;
+       
     }
     .tab {
         background: none;
@@ -807,6 +811,7 @@ body.dark li img{
     #skills ul li{
      margin-left:50px;
      margin-right:0px;
+    
     }
     #A-1{
        width:150px;
@@ -828,7 +833,6 @@ body.dark li img{
   }
 
   
- 
 
   
 
@@ -909,9 +913,7 @@ body.dark.tabs {
    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 
                0 6px 20px rgba(253, 251, 251, 0.1);
 }
-#experience{
-    
-}
+
 }
 li img{
     width: 120px;
@@ -924,11 +926,11 @@ li img{
     text-decoration:none;
 }
 #skills{
-    margin-top: 100px;
+    margin-top:80px;
     margin-left:150px;
 }
 #experience{
-    margin-top: 100px;
+    margin-top:50px;
 }
 #skills li{
     list-style:none;
@@ -1014,6 +1016,7 @@ li img{
   }
   .icon{
     color: #FFBF00;
+    background: #f4e68d;
   }
 
 /*---======== Sub ======----*/
@@ -1732,6 +1735,19 @@ body.dark .Req form{
     }
 }
 
-/*---===== Login page username $ possword =====---*/
 
+
+.About{
+    opacity: 0;
+    transform: translateY(30px); /* Hidden by default */
+    transition: all 0.9s ease-out;
+}
+.About.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .About[data-animate="zoom-in"] {
+    transform: scale(0.9);
+  } 
+  
 

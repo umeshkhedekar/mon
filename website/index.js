@@ -137,53 +137,72 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSlide(currentIndex);
 });
 
+/*-------> button scoll <--------*/
+ // Back to Top Button Functionality
+ const backToTopButton = document.getElementById('back-to-top');
+  
+ // Toggle Back to Top Button Visibility
+ const toggleBackToTopVisibility = () => {
+   if (window.scrollY > 300) {
+     backToTopButton.classList.add('show');
+   } else {
+     backToTopButton.classList.remove('show');
+   }
+ };
+ 
+ // Check visibility on scroll
+ window.addEventListener('scroll', toggleBackToTopVisibility);
+ 
+ // Ensure the arrow is hidden on page load
+ document.addEventListener('DOMContentLoaded', toggleBackToTopVisibility);
+ 
+ // Scroll to the top when clicking the button
+ backToTopButton.addEventListener('click', () => {
+   window.scrollTo({
+     top: 0,
+     behavior: 'smooth',
+   });
+ });
+ 
 
 /*---===== smooth scroll page =====---*/
 // Smooth scroll functionality for navigation links
 document.querySelectorAll('.smooth-scroll').forEach(link => {
-    link.addEventListener('click', function (event) {
-      const targetID = this.getAttribute('href');
-      if (targetID.startsWith('#')) {
-        event.preventDefault();
-        document.querySelector(targetID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }
-    });
-  });
-  
-  // Back to Top Button Functionality
-  const backToTopButton = document.getElementById('back-to-top');
-  
-  // Toggle Back to Top Button Visibility
-  const toggleBackToTopVisibility = () => {
-    if (window.scrollY > 300) {
-      backToTopButton.classList.add('show');
-    } else {
-      backToTopButton.classList.remove('show');
+  link.addEventListener('click', function (event) {
+    const targetID = this.getAttribute('href');
+    if (targetID.startsWith('#')) {
+      event.preventDefault();
+      document.querySelector(targetID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     }
-  };
-  
-  // Check visibility on scroll
-  window.addEventListener('scroll', toggleBackToTopVisibility);
-  
-  // Ensure the arrow is hidden on page load
-  document.addEventListener('DOMContentLoaded', toggleBackToTopVisibility);
-  
-  // Scroll to the top when clicking the button
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
   });
-  
+});
 
+/*------> scroll animetion class <-----------*/
 
+document.addEventListener("DOMContentLoaded", () => {
+const boxes = document.querySelectorAll(".About");
 
+const handleScroll = () => {
+  boxes.forEach((box) => {
+    const rect = box.getBoundingClientRect();
+    const animationType = box.getAttribute("data-animate");
 
+    if (rect.top < window.innerHeight - 100 && rect.bottom > 100) {
+      // Add animation class if the element is in the viewport
+      box.classList.add(animationType);
+    } else {
+      // Remove animation class if the element is out of the viewport
+      box.classList.remove(animationType);
+    }
+  });
+};
 
+window.addEventListener("scroll", handleScroll);
+handleScroll(); // Trigger on load
+});
 
 
 
