@@ -647,16 +647,17 @@ body.dark .firstt img{
      background: #edf2f7;
      color: rgb(8, 22, 169);
  }
+ body.dark .tab.active {
+    background: #6f85b0;
+    color: rgb(8, 22, 169);
+}
  .section {
      background:none;
      padding: 20px;
      border-radius: 5px;
      color: #000;
-     margin-top:-40px;
+     margin-top:-60px;
      margin-left:70px;
- }
- #skills ul li{
-    margin-left: 80px;
  }
  #A-1{
     width: 130px;
@@ -717,13 +718,7 @@ body.dark .firstt img{
  body.dark .tab{
     color: #fff;
 }
-body.dark li img{
-    width: 120px;
-    height:90px;
-    box-shadow: 0 4px 8px rgba(250, 243, 243, 0.1), 
-                0 6px 20px rgba(255, 255, 255, 0.1);
-    
-}
+
 /*...!-!-!-!-!-!--- mobile screen About section ---!-!-!-!-!-!...*/
 
 @media (max-width: 790px) {
@@ -784,6 +779,7 @@ body.dark li img{
        width: 350px;
        margin-top: -40px;
     }
+    
     .Ac{
         display:table;
        
@@ -808,11 +804,6 @@ body.dark li img{
     body.dark .tab.active{
        color: #007bff;
     }
-    #skills ul li{
-     margin-left:50px;
-     margin-right:0px;
-    
-    }
     #A-1{
        width:150px;
     }
@@ -822,6 +813,7 @@ body.dark li img{
     #A-3{
         width: 150px;
     }
+
     /*-------------------*/
      /* Services Section */
   .services-section {
@@ -831,17 +823,9 @@ body.dark li img{
     margin-top:-30px;
     display:none;
   }
-
-  
-
-  
-
   .service h3 {
-    
     font-size: 1.2em;
   }
-
-  
   .icon{
     color: #FFBF00;
   }
@@ -852,7 +836,6 @@ body.dark li img{
     border-right:none;
     margin-top:30px;
     margin-left:-60px;
-    
  }
  .zx{
     margin-left:70px;
@@ -876,61 +859,26 @@ body.dark li img{
    margin-left:-80px;
    font-size:15px;
 }
-li img{
-    margin-left:-90px;
-    margin-top:-70px;
-}
-.Ac{
-    margin-left:-190px;
-    margin-top: -60px
-   
-   
-}
-.Ac li{
-    margin-left: 5px;
-    padding:10px;
-    gap:0px;
-    margin-top: 50px;
-}
-.we{
-    display: flex;
-    margin-top:0px;
-}
-.wr{
-    display: flex;
-    margin-top: 20px;
-}
-.wt{
-    display: flex;
-    margin-top:20px;
-}
-.wy{
-    display: flex;
-}
 /* About Section */
 body.dark.tabs {
-   
    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 
                0 6px 20px rgba(253, 251, 251, 0.1);
 }
+}
 
-}
-li img{
-    width: 120px;
-    height:90px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
-                0 6px 20px rgba(0, 0, 0, 0.1);
-    
-}
 #about a{
     text-decoration:none;
 }
 #skills{
-    margin-top:80px;
+    margin-top:-45px;
     margin-left:150px;
 }
 #experience{
-    margin-top:50px;
+    margin-top:-50px;
+    color: #000;
+}
+body.dark #experience{
+    color: #fff;
 }
 #skills li{
     list-style:none;
@@ -944,12 +892,10 @@ li img{
     background: url('background.jpg') no-repeat center center/cover;
     height: 100vh;
   }
-
-  /* About Section */
+  /* -----> About Section  <-------- */
   .about-section {
     max-width:50%;
   }
-
   .about-section h1 {
     font-size: 2.5em;
     color: #FFBF00;
@@ -972,11 +918,111 @@ li img{
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
-
-  
   .about-section button:hover {
     background-color: #e69517;
   }
+   /* -----> About Section ( skill page) <-------- */
+   .skill{
+    margin-left:-5%;
+   }
+   .skill i{
+    color: #FFBF00;
+    padding:10px;
+    font-size:50px;
+   }
+   .frontend{
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+   }
+   .backend{
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+    margin-top:15px;
+   }
+   .html, .css, .Javascript, .react, .bootstrap, .java, .python, .php, .github, .database{
+  /*  background: #f2f4f6; */
+  background: #fff;
+    width:200px;
+    padding:30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #aac2f5;
+   }
+   /*-------> zooming hover <--------*/
+   .html:hover, .css:hover, .Javascript:hover, .react:hover, .bootstrap:hover, .java:hover, .python:hover, .php:hover, .github:hover, .database:hover{
+   transform: scale(1.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            background: #eff2f6;
+   }
+   .score {
+    font-size:20px;
+    color: #3498db;
+    font-weight: bold;
+} 
+body.dark .html,body.dark .css, body.dark .Javascript, body.dark .react,body.dark .bootstrap,body.dark .java,body.dark .python,body.dark .php,body.dark .github,body.dark .database{
+    background: #222121;
+}
+@media (max-width: 790px){
+   .skill{
+    margin-left:-18%;
+   } 
+   .skill i{
+    color: #FFBF00;
+    padding:5px;
+    font-size:40px;
+   }
+   .frontend{
+    padding: 10px;
+    gap: 30px;
+    margin-left:-220px;
+   }
+   .backend{
+    margin-left:-220px;
+    padding: 10px;
+    gap: 30px;
+    margin-top:-50px;
+   }
+   .html, .css, .Javascript, .react, .bootstrap, .java, .python, .php, .github, .database{
+  /*  background: #f2f4f6; */
+  background:none;
+    width:0px;
+    padding:20px;
+    border-radius:none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow:none; 
+    border:none; 
+   }
+   .text{
+    font-size: 10px;
+   }
+   .skill h4{
+    font-size:10px;
+   }
+   .score{
+    font-size: 13px;
+   }
+   .html:hover, .css:hover, .Javascript:hover, .react:hover, .bootstrap:hover, .java:hover, .python:hover, .php:hover, .github:hover, .database:hover{
+    transform: scale(1.2);
+             box-shadow:none; 
+             background: none;
+           
+    }
+    body.dark .html,body.dark .css, body.dark .Javascript, body.dark .react,body.dark .bootstrap,body.dark .java,body.dark .python,body.dark .php,body.dark .github,body.dark .database{
+        background:none;
+    }
+}
+/*-----> about service section icon zooming <------*/
+.icon{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+}
+.icon:hover{
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
 
   /* Services Section */
   .services-section {
@@ -985,31 +1031,26 @@ li img{
     font-size:14px;
     margin-top: -30px;
   }
-
   .services-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #f4a81d;
     margin-left:-180px;
   }
-  
   .service {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
-
   .service .icon {
     font-size: 2em;
     margin-right: 15px;
     color: #f4a81d;
   }
-
   .service h3 {
     margin-left:-250px;
     font-size: 1.2em;
   }
-
   .service p {
     margin: 5px 0 0;
     line-height: 1.4;
@@ -1027,39 +1068,30 @@ li img{
     display: flex;
     text-align: center;
   background-image:url(./img/landscape-with-warm-tones.jpg);
- 
     margin-top:-60px;
     height: 510px;
 }
-
 .slider {
     position: relative;
     width: 100%;
     max-width:600px;
     overflow: hidden;
     margin-top: 50px;
- 
     margin-left:70px;
 }
-
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .slide {
     min-width: 100%;
     box-sizing: border-box;
 }
-
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
-  
 }
-
 .indicators {
     position: absolute;
     bottom: 10px;
@@ -1069,7 +1101,6 @@ li img{
     justify-content: center;
     align-items: center;
 }
-
 .indicator {
     width: 10px;
     height: 10px;
@@ -1086,7 +1117,6 @@ body.dark .indicator.active{
 body.dark .indicator{
     background-color:#fff;
 }
-
 .indicator.active {
     background-color:#FFBF00;
 }

@@ -204,7 +204,51 @@ window.addEventListener("scroll", handleScroll);
 handleScroll(); // Trigger on load
 });
 
+/*--------- perntage scor runing ------*/
+ /* // Target the score element
+  const scoreElement = document.getElementById('score');
+  let currentScore = 0;
+  const targetScore = 90; // Final score
+  const interval = 30; // Update interval in milliseconds
 
+  const updateScore = setInterval(() => {
+      if (currentScore < targetScore) {
+          currentScore++;
+          scoreElement.textContent = currentScore + '%';
+      } else {
+          clearInterval(updateScore); // Stop the interval when the target score is reached
+      }
+  }, interval);
+*/
 
+ // Function to update scores dynamically
+ function updateScores() {
+  const scoreContainers = document.querySelectorAll('.score-container');
+
+  scoreContainers.forEach((container, index) => {
+      const scoreElement = container.querySelector('.score');
+      const targetScore = parseInt(container.dataset.target, 10);
+      let currentScore = 0;
+
+      // Update each score with its own interval
+      const interval = setInterval(() => {
+          if (currentScore < targetScore) {
+              currentScore++;
+              scoreElement.textContent = currentScore + '%';
+          } else {
+              clearInterval(interval);
+              container.querySelector('.text').textContent = 'Complete!';
+          }
+      }, 30 + index * 10); // Slightly stagger intervals for visual effect
+  });
+}
+
+// Start updating scores
+updateScores();
+
+  
+
+  
+  
 
   

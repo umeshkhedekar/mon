@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Scores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+
+        .score-container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .score {
+            font-size: 40px;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .text {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Score containers -->
+    <div class="score-container" data-target="90">
+        <div class="score" id="score-1">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+    <div class="score-container" data-target="100">
+        <div class="score" id="score-2">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+    <div class="score-container" data-target="80">
+        <div class="score" id="score-3">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+    <div class="score-container" data-target="98">
+        <div class="score" id="score-4">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+    <div class="score-container" data-target="91">
+        <div class="score" id="score-5">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+    <div class="score-container" data-target="85">
+        <div class="score" id="score-6">0%</div>
+        <div class="text">Updating...</div>
+    </div>
+
+    <script>
+        // Function to update scores dynamically
+        function updateScores() {
+            const scoreContainers = document.querySelectorAll('.score-container');
+
+            scoreContainers.forEach((container, index) => {
+                const scoreElement = container.querySelector('.score');
+                const targetScore = parseInt(container.dataset.target, 10);
+                let currentScore = 0;
+
+                // Update each score with its own interval
+                const interval = setInterval(() => {
+                    if (currentScore < targetScore) {
+                        currentScore++;
+                        scoreElement.textContent = currentScore + '%';
+                    } else {
+                        clearInterval(interval);
+                        container.querySelector('.text').textContent = 'Complete!';
+                    }
+                }, 30 + index * 10); // Slightly stagger intervals for visual effect
+            });
+        }
+
+        // Start updating scores
+        updateScores();
+    </script>
+</body>
+</html>

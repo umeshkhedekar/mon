@@ -80,23 +80,24 @@
 <!--========= About section =========-->
 
 </div>
+
   <section class="About" id="About" data-animate="fade-in">
     <div class="tabs" id="sa">
         <button class="tab active" id="A-1" onclick="showSection('about', this)">About Me</button>
         <button class="tab" id="A-2" onclick="showSection('skills', this)">Skills</button>
         <button class="tab" id="A-3" onclick="showSection('experience', this)">Experience</button>
     </div>
-    <div class="container">
+    <div class="container" data-animate="fade-in">
         <div id="about" class="section">
             <div class="underline"></div>
             <div class="container">
-                <!-- About Section -->
+<!-- About Section -->
                 <div class="about-section">
                     <div class="vb"><h1 class="zx">About Our<br><span>Fullstack developer</span></h1></div>
                     <div class="nb"> <p>Full stack development is the process of developing both<br> frontend and backend of applications.</p></div>
                     <button><a href="#">View Our Work</a></button>
                   </div>
-                <!-- Services Section -->
+<!-- Services Section -->
                 <div class="services-section">
                   <h2>What We Do</h2>
                   <div class="service">
@@ -122,39 +123,125 @@
                   </div>
                 </div>
               </div>
-          
         </div>
-        <div id="skills" class="section" style="display:none;">
+
+<!--------** Skill section page **----->
+       <div id="skills"  class="section"  style="display:none;">
+        <div class="skill">
+<!-----Frontend----->
+          <div class="frontend"> 
           
-            <div class="Ac">
-            <!-- Add more skills as needed -->
-            <ul class="we">
-                <li><img src="./img/02dbebcde9048b30687784c7300c360b.png"></li>
-                <li><img src="./img/1e253a8cd019680ccd70c96a71bde689.png"></li>
-                <li><img src="./img/ec92a2fadd49efc3cff8651d01e53b4f.png"></li>
-            </ul>
-            <ul class="wr">
-                <li><img src="./img/0d2deea4a0bc5098e7aede71005cb0f0.png"></li>
-                <li><img src="./img/38c55767aa0fceca545976a7717cd01a.png"></li>
-                <li><img src="./img/kisspng-logo-php-computer-icons-postgresql-logo-5b559bb3c74f56.5833904615323370758164.png"></li>
-            </ul>
-            <ul class="wt">
-                <li><img src="./img/27269a3c57a20a4f4e483f263f876fd0.png"></li>
-                <li><img src="./img/kisspng-microsoft-sql-server-sql-server-management-studio-pemex-logo-5b3ff8a57374c9.8355160415309190774729.png"></li>
-                <li><img src="./img/kisspng-microsoft-sql-server-database-query-language-inser-sql-dba-training-in-hyderabad-sql-dba-training-ins-5b643f1d73b471.3993933915332964134739.png"> </li>
-            </ul>
-            <ul class="wy">
-                <li><img src="./img/befb83ee3f6731fb27293b2bdda2869a.png"></li>
-                <li><img src="./img/7d0baf78a17c8d017d597fe4d7f359fd.png"> </li>
-                <li><img  src="./img/3f0dd5b7ff57762e5333e1d3c3ed6b0a.png"> </li>
-            </ul>
+            <div class="html">
+              <i class="fa-brands fa-html5"></i>
+               <h4>Html</h4>
+               <div class="score-container" data-target="90">
+                <div class="score" id="score-1">0%</div>
+                <div class="text">Updating...</div>
+                </div>
             </div>
+           
+            
+            
+            <div class="css">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h4>Css</h4>
+              <div class="score-container" data-target="100">
+                <div class="score" id="score-2">0%</div>
+                <div class="text">Updating...</div>
+                </div>
+            </div>
+            
+          
+          
+            <div class="Javascript">
+              <i class="fa-brands fa-js"></i>
+              <h4>Javascript</h4>
+              <div class="score-container" data-target="80">
+                <div class="score" id="score-3">0%</div>
+                <div class="text">Updating...</div>
+                </div>
+            </div>
+
+            <div class="react">
+              <i class="fa-brands fa-react"></i>
+              <h4>React.js</h4>
+              <div class="score-container" data-target="98">
+                <div class="score" id="score-4">0%</div>
+                <div class="text">Updating...</div>
+                </div>
+            </div>
+
+            <div class="bootstrap">
+              <i class="fa-brands fa-bootstrap"></i>
+              <h4>Github</h4>
+              <div class="score-container" data-target="91">
+                <div class="score" id="score-5">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+           </div>
+          </div>
         </div>
+          
+<!------Backend------->
+          <div class="backend">
+            <div class="java">
+              <i class="fa-brands fa-java"></i>
+              <h4>Java</h4>
+              <div class="score-container" data-target="95">
+                <div class="score" id="score-6">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+        
+            </div>
+            <div class="python">
+              <i class="fa-brands fa-python"></i>
+              <h4>python</h4>
+              <div class="score-container" data-target="98">
+                <div class="score" id="score-7">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+        
+            </div>
+            <div class="php">
+              <i class="fa-brands fa-php"></i>
+              <h4>Php</h4>
+              <div class="score-container" data-target="88">
+                <div class="score" id="score-8">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+        
+            </div>
+            <div class="github">
+              <i class="fa-brands fa-github"></i>
+              <h4>GitHub</h4>
+              <div class="score-container" data-target="85">
+                <div class="score" id="score-9">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+        
+            </div>
+            <div class="database">
+              <i class="fa-solid fa-database"></i>
+              <h4>Database</h4>
+              <div class="score-container" data-target="100">
+                <div class="score" id="score-10">0%</div>
+                <div class="text">Updating...</div>
+            </div>
+        
+            </div>
+          </div>
+      </div>
+      
+</div>
+          
+
+<!-------** Exeperince Section page ***-------->
         <div id="experience" class="section" style="display:none;">
             <p>As a 3-year experienced full stack developer, you should have a strong foundation in both front-end and back-end development. On the front-end, you should have experience working with HTML, CSS, JavaScript, and one or more popular libraries such as jQuery or React.</p>
             <!-- Add more content as needed -->
         </div>
     </div>
+
  </section>
  
 <!--=========== slider section ==========-->
