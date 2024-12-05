@@ -246,6 +246,8 @@ handleScroll(); // Trigger on load
 // Start updating scores
 updateScores();
 
+
+
   
 
   

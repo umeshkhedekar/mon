@@ -370,9 +370,13 @@ body.dark .search-field i{
 .home{
     background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
     background: linear-gradient(to bottom, #ffffff 23%, #FFBF00 210%);
-    height: 600px;
-    margin-top: 60px;
-    width: 100%;
+    height:100%;
+    margin-top:0px;
+    width:100%;
+    position: fixed;
+}
+.icco{
+    display:none;
 }
 /*------ body dark home section -----*/
 body.dark .home{
@@ -436,6 +440,12 @@ body.dark .name h3 span::before{
         margin-left:-10px;
     
     }
+    .icco{
+        display: block;
+      
+    }
+   
+       
 }
 
 /* name button */
@@ -1264,10 +1274,7 @@ footer {
  footer span{
     color: #FFBF00;
  }
- .icco{
-    margin-top:5px;
-    
- }
+ 
  .icco i{
     margin: 10px;
     border: 1px solid #fff;
@@ -1299,7 +1306,12 @@ footer {
     background-color: #25d554;
     color: #fff;
  }
- 
+ @media (max-width: 790px) {
+    .icco{
+        margin-top:150px;
+        margin-left: 50px;
+    }
+ }
  /*--======== here========*/
  .am{
     margin-top: 200px;
