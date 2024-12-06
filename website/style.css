@@ -608,7 +608,8 @@ body.dark .firstt img{
      width: 100%;
      margin:20px;
      height:400px;
-     
+     margin-top: 80px;
+    
  }
  .tabs-container {
     background-color:#007bff; 
@@ -699,6 +700,7 @@ body.dark .firstt img{
     border-right: none;
 
  }
+ 
  .about-section a{
     color: #000;
  }
@@ -733,7 +735,7 @@ body.dark .firstt img{
 
 @media (max-width: 790px) {
     .About{
-        margin-top:-40px;
+        margin-top:40px;
        
         transition: box-shadow 0.3s ease-in-out;
         margin-left:px;
@@ -742,7 +744,7 @@ body.dark .firstt img{
     }
     .about-section{
       width:210px;
-      margin-top: -30px;
+      margin-top:50px;
     }
     
     body.dark .About{
