@@ -6,90 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loding....</title>
-<style>
-    
-      section{
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        background: #fff;
-        align-items: center;
-        justify-content: center;
-      }
-      .loader{
-        height: 25px;
-        width: 25px;
-        position: relative;
-        animation: rotate 5s  infinite;
-      }
-      .ball{
-        position: absolute;
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      }
-      .upper{
-        left: 0;
-        top: -22px;
-        background:#FFBF00;
-        animation: upper 1s linear infinite;
-      }
-      @keyframes upper {
-        50%{
-          top: 22px;
-        }
-        100%{
-          top: 22px;
-        }
-      }
-      .right{
-        right: -22px;
-        top: 0;
-        background:#FFBF00;
-        animation: right 1s linear infinite;
-      }
-      @keyframes right {
-        50%{
-          right: 22px;
-        }
-        100%{
-          right: 22px;
-        }
-      }
-      .lower{
-        bottom: -22px;
-        left: 0;
-        background:#FFBF00;
-        animation: lower 1s linear infinite;
-      }
-      @keyframes lower {
-        50%{
-          bottom: 22px;
-        }
-        100%{
-          bottom: 22px;
-        }
-      }
-      .left{
-        left: -22px;
-        top: 0;
-        background:#FFBF00;
-        animation: left 1s linear infinite;
-      }
-      @keyframes left {
-        50%{
-          left: 22px;
-        }
-        100%{
-          left: 22px;
-        }
-      }
-      .loader h3{
-        margin-top:80px;
-        text-align: center;
-      }
-</style>
+ <!-- ===== CSS ===== -->
+ <link rel="stylesheet" href="style.css">
+ <!-- ===== Boxicons CSS ===== -->
+ <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+ <!--==== Cdn link ====-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- ===== Title ===== -->
+ <title>Website Planet</title>
+ <link rel="icon" href="./Image/306921013_180349474498662_2696928526696293829_n.jpg" type="image/x-icon">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
   <body>
     <section>
@@ -103,6 +32,7 @@
     </section>
     
   </body>
+  <script src="index.js"></script>
   <script>
     setTimeout(() => {
       window.location.href = "About.html";
