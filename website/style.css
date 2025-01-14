@@ -368,10 +368,10 @@ body.dark .search-field i{
   
 }
 .home{
-    background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
-    background: linear-gradient(to bottom, #ffffff 23%, #FFBF00 210%);
+  /*  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%); */
+   background: linear-gradient(to bottom, #ffffff 23%, #FFBF00 210%); 
     height:100%;
-    margin-top:0px;
+    margin-top:50px;
     width:100%;
     position: fixed;
 }
@@ -491,12 +491,12 @@ body.dark .name h3 span::before{
 }
 .name h3 span::before {
     content: "";
-    height: 30px;
+    height:30px;
     width: 2px;
     position: absolute;
     top: 50%;
     right: -8px;
-    background: #fff;
+    background: #000;
     transform: translateY(-45%);
     animation: blink 0.4s infinite;
 }
@@ -511,8 +511,8 @@ body.dark .name h3 span::before{
 
 .firstt{
     display: flex;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left:-100px;
+    margin-top:-100px;
 }
 .firstt img{
     width:400px;
@@ -542,6 +542,7 @@ body.dark .name p{
     display: table;
     margin-left:10px;
     text-align:none;
+    margin-top:180px;
 }
 .name{
     margin-left:-10px;
@@ -561,7 +562,11 @@ body.dark .firstt img{
 .home{
     height:762px;
     width:100%;
-    background: linear-gradient(to bottom, #ffffff 23%, #FFBF00 210%);
+   background: linear-gradient(to bottom, #ffffff 23%, #FFBF00 180%); 
+    margin-top:-75px;
+}
+.as img{
+    display: none;
 }
 }
 .message {
